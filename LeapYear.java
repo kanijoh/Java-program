@@ -4,26 +4,26 @@ public class Demo {
     public static void main(String[] args) {
 
     	int year;
-    	Scanner scan = new Scanner(System.in);
+    	Scanner scan= new Scanner(System.in);
     	System.out.println("Enter Year:");
-    	year = scan.nextInt();
+    	year=scan.nextInt();
     	scan.close();
-        boolean isLeap = false;
+        boolean isLeap=false;
 
-        if(year % 4 == 0)
+        if(year%4==0)
         {
-            if( year % 100 == 0)
+            if(year%100==0)
             {
-                if ( year % 400 == 0)
+                if (year%400==0)
                     isLeap = true;
                 else
-                    isLeap = false;
+                    isLeap=false;
             }
             else
-                isLeap = true;
+                isLeap=true;
         }
         else {
-            isLeap = false;
+            isLeap=false;
         }
 
         if(isLeap==true)
